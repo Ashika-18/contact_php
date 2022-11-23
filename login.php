@@ -1,3 +1,4 @@
+<!-- login -->
 <?php
 
 session_start();
@@ -17,7 +18,7 @@ if ($_POST['email'] != '' && $_POST['pass'] != '') {
         $_SESSION['id'] = $member['id'];
         $_SESSION['time'] = time();
 
-        header('Location: posts');
+        header('Location: posts.php');
         exit();
     }
 }

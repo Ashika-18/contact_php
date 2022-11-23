@@ -1,3 +1,4 @@
+<!-- input -->
 <?php
 
 session_start();
@@ -19,7 +20,7 @@ if (!empty($_POST)) {
     unset($_SESSION['query']);
 
     //登録完了画面に移動する
-    header('Location:input_end');
+    header('Location:input_end.php');
     exit();
 }
 

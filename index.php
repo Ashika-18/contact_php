@@ -1,3 +1,4 @@
+<!-- index -->
 <?php
 
 session_start();
@@ -6,7 +7,7 @@ require('dbconnect.php');
 
 if(!empty($_POST)) {
     $_SESSION['query'] = $_POST;
-    header('Location:');
+    header('Location:input.php');
     exit();
 
 }
